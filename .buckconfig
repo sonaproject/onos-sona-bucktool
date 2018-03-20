@@ -11,6 +11,7 @@
 [alias]
     onos = //tools/package:onos-package
     onos-local = //tools/package:onos-run
+    buck-plugin = //tools/build/buck-plugin:onos
 
 [download]
   in_build = true
