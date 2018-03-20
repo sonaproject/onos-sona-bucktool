@@ -1,0 +1,70 @@
+UTILS = [
+    '//onos/utils/osgi:onlab-osgi',
+    '//onos/utils/junit:onlab-junit',
+    '//onos/utils/misc:onlab-misc',
+    '//onos/utils/rest:onlab-rest',
+    '//onos/tools/build/conf:onos-build-conf',
+]
+
+API = [
+    '//onos/core/api:onos-api',
+    '//onos/incubator/api:onos-incubator-api',
+]
+
+CORE = UTILS + API + [
+    '//onos/core/net:onos-core-net',
+    '//onos/core/common:onos-core-common',
+    '//onos/core/store/primitives:onos-core-primitives',
+    '//onos/core/store/serializers:onos-core-serializers',
+    '//onos/core/store/dist:onos-core-dist',
+    '//onos/core/security:onos-security',
+    '//onos/core/store/persistence:onos-core-persistence',
+
+    '//onos/incubator/net:onos-incubator-net',
+    '//onos/incubator/store:onos-incubator-store',
+
+    '//onos/cli:onos-cli',
+
+    '//onos/protocols/openflow/api:onos-protocols-openflow-api',
+    '//onos/protocols/openflow/ctl:onos-protocols-openflow-ctl',
+    '//onos/protocols/ovsdb/rfc:onos-protocols-ovsdb-rfc',
+    '//onos/protocols/ovsdb/api:onos-protocols-ovsdb-api',
+    '//onos/protocols/ovsdb/ctl:onos-protocols-ovsdb-ctl',
+
+    '//onos/drivers/utilities:onos-drivers-utilities',
+
+    '//onos/providers/openflow/device:onos-providers-openflow-device',
+    '//onos/providers/openflow/packet:onos-providers-openflow-packet',
+    '//onos/providers/openflow/flow:onos-providers-openflow-flow',
+    '//onos/providers/openflow/group:onos-providers-openflow-group',
+    '//onos/providers/openflow/meter:onos-providers-openflow-meter',
+    '//onos/providers/ovsdb/device:onos-providers-ovsdb-device',
+    '//onos/providers/ovsdb/tunnel:onos-providers-ovsdb-tunnel',
+
+    '//onos/web/api:onos-rest',
+    '//onos/web/gui:onos-gui',
+]
+
+ONOS_DRIVERS = [
+    # Drivers
+    #'//onos/drivers/default:onos-drivers-default-oar',
+    '//onos/drivers/ovsdb:onos-drivers-ovsdb-oar',
+]
+
+ONOS_PROVIDERS = [
+    # Providers
+    '//onos/providers/openflow/message:onos-providers-openflow-message-oar',
+    '//onos/providers/ovsdb:onos-providers-ovsdb-oar',
+    '//onos/providers/ovsdb/host:onos-providers-ovsdb-host-oar',
+    '//onos/providers/ovsdb/base:onos-providers-ovsdb-base-oar',
+    '//onos/providers/openflow/base:onos-providers-openflow-base-oar',
+    '//onos/providers/openflow/app:onos-providers-openflow-app-oar',
+]
+
+SONA_APPS = [
+    # SONA Apps
+    '//apps/openstacknetworking:onos-apps-openstacknetworking-oar',
+    '//apps/openstacknode:onos-apps-openstacknode-oar',
+]
+
+APPS = SONA_APPS
