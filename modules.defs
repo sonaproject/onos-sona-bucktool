@@ -64,6 +64,7 @@ ONOS_PROVIDERS = [
 SONA_APPS = [
     # SONA Apps
     '//apps/openstacknetworking:onos-apps-openstacknetworking-oar',
+    '//apps/openstacknetworkingui:onos-apps-openstacknetworkingui-oar',
     '//apps/openstacknode:onos-apps-openstacknode-oar',
 ]
 
