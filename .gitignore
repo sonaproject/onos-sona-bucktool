@@ -21,7 +21,6 @@ bucklets/plugins/
 .vscode
 *.fxs
 
-/bin/
 lib/yang
 /tools/gui/bin
 /tools/gui/node_modules
