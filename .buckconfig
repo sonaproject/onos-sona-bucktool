@@ -1,5 +1,5 @@
 [buildfile]
-  includes = //stable-onos/buck-tools/default.defs
+  includes = //01-stable-onos/buck-tools/default.defs
 
 [plugins]
   directory = //bin/plugins
@@ -9,9 +9,9 @@
   target_level = 8
 
 [alias]
-    onos = //stable-onos/tools/package:onos-package
-    onos-local = //stable-onos/tools/package:onos-run
-    buck-plugin = //stable-onos/tools/build/buck-plugin:onos
+    onos = //01-stable-onos/tools/package:onos-package
+    onos-local = //01-stable-onos/tools/package:onos-run
+    buck-plugin = //01-stable-onos/tools/build/buck-plugin:onos
 
 [download]
   in_build = true
