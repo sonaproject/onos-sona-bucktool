@@ -1,6 +1,7 @@
 #!/bin/bash
 
-MASTER_ONOS=master-onos/apps
+MASTER_ONOS=master-onos
+MASTER_ONOS_APPS=$MASTER_ONOS/apps
 LOCAL_APPS=apps
 BUCK_OUT=buck-out
 SONA_OUT=sona-out
@@ -9,9 +10,12 @@ rm -rf $LOCAL_APPS
 mkdir -p $LOCAL_APPS
 
 # copy sona apps into the separated directory
-cp -R $MASTER_ONOS/openstacknetworking $LOCAL_APPS
-cp -R $MASTER_ONOS/openstacknode $LOCAL_APPS
-cp -R $MASTER_ONOS/openstacknetworkingui $LOCAL_APPS
+cp -R $MASTER_ONOS_APPS/openstacknetworking $LOCAL_APPS
+cp -R $MASTER_ONOS_APPS/openstacknode $LOCAL_APPS
+cp -R $MASTER_ONOS_APPS/openstacknetworkingui $LOCAL_APPS
+
+# remove master-onos
+rm -rf $MASTER_ONOS
 
 # start to build sona and corresponding artifacts
 bin/buck build onos
