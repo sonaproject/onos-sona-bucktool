@@ -1,64 +1,64 @@
 UTILS = [
-    '//onos/utils/osgi:onlab-osgi',
-    '//onos/utils/junit:onlab-junit',
-    '//onos/utils/misc:onlab-misc',
-    '//onos/utils/rest:onlab-rest',
-    '//onos/tools/build/conf:onos-build-conf',
+    '//stable-onos/utils/osgi:onlab-osgi',
+    '//stable-onos/utils/junit:onlab-junit',
+    '//stable-onos/utils/misc:onlab-misc',
+    '//stable-onos/utils/rest:onlab-rest',
+    '//stable-onos/tools/build/conf:onos-build-conf',
 ]
 
 API = [
-    '//onos/core/api:onos-api',
-    '//onos/incubator/api:onos-incubator-api',
+    '//stable-onos/core/api:onos-api',
+    '//stable-onos/incubator/api:onos-incubator-api',
 ]
 
 CORE = UTILS + API + [
-    '//onos/core/net:onos-core-net',
-    '//onos/core/common:onos-core-common',
-    '//onos/core/store/primitives:onos-core-primitives',
-    '//onos/core/store/serializers:onos-core-serializers',
-    '//onos/core/store/dist:onos-core-dist',
-    '//onos/core/security:onos-security',
-    '//onos/core/store/persistence:onos-core-persistence',
+    '//stable-onos/core/net:onos-core-net',
+    '//stable-onos/core/common:onos-core-common',
+    '//stable-onos/core/store/primitives:onos-core-primitives',
+    '//stable-onos/core/store/serializers:onos-core-serializers',
+    '//stable-onos/core/store/dist:onos-core-dist',
+    '//stable-onos/core/security:onos-security',
+    '//stable-onos/core/store/persistence:onos-core-persistence',
 
-    '//onos/incubator/net:onos-incubator-net',
-    '//onos/incubator/store:onos-incubator-store',
+    '//stable-onos/incubator/net:onos-incubator-net',
+    '//stable-onos/incubator/store:onos-incubator-store',
 
-    '//onos/cli:onos-cli',
+    '//stable-onos/cli:onos-cli',
 
-    '//onos/protocols/openflow/api:onos-protocols-openflow-api',
-    '//onos/protocols/openflow/ctl:onos-protocols-openflow-ctl',
-    '//onos/protocols/ovsdb/rfc:onos-protocols-ovsdb-rfc',
-    '//onos/protocols/ovsdb/api:onos-protocols-ovsdb-api',
-    '//onos/protocols/ovsdb/ctl:onos-protocols-ovsdb-ctl',
+    '//stable-onos/protocols/openflow/api:onos-protocols-openflow-api',
+    '//stable-onos/protocols/openflow/ctl:onos-protocols-openflow-ctl',
+    '//stable-onos/protocols/ovsdb/rfc:onos-protocols-ovsdb-rfc',
+    '//stable-onos/protocols/ovsdb/api:onos-protocols-ovsdb-api',
+    '//stable-onos/protocols/ovsdb/ctl:onos-protocols-ovsdb-ctl',
 
-    '//onos/drivers/utilities:onos-drivers-utilities',
+    '//stable-onos/drivers/utilities:onos-drivers-utilities',
 
-    '//onos/providers/openflow/device:onos-providers-openflow-device',
-    '//onos/providers/openflow/packet:onos-providers-openflow-packet',
-    '//onos/providers/openflow/flow:onos-providers-openflow-flow',
-    '//onos/providers/openflow/group:onos-providers-openflow-group',
-    '//onos/providers/openflow/meter:onos-providers-openflow-meter',
-    '//onos/providers/ovsdb/device:onos-providers-ovsdb-device',
-    '//onos/providers/ovsdb/tunnel:onos-providers-ovsdb-tunnel',
+    '//stable-onos/providers/openflow/device:onos-providers-openflow-device',
+    '//stable-onos/providers/openflow/packet:onos-providers-openflow-packet',
+    '//stable-onos/providers/openflow/flow:onos-providers-openflow-flow',
+    '//stable-onos/providers/openflow/group:onos-providers-openflow-group',
+    '//stable-onos/providers/openflow/meter:onos-providers-openflow-meter',
+    '//stable-onos/providers/ovsdb/device:onos-providers-ovsdb-device',
+    '//stable-onos/providers/ovsdb/tunnel:onos-providers-ovsdb-tunnel',
 
-    '//onos/web/api:onos-rest',
-    '//onos/web/gui:onos-gui',
+    '//stable-onos/web/api:onos-rest',
+    '//stable-onos/web/gui:onos-gui',
 ]
 
 ONOS_DRIVERS = [
     # Drivers
     #'//onos/drivers/default:onos-drivers-default-oar',
-    '//onos/drivers/ovsdb:onos-drivers-ovsdb-oar',
+    '//stable-onos/drivers/ovsdb:onos-drivers-ovsdb-oar',
 ]
 
 ONOS_PROVIDERS = [
     # Providers
-    '//onos/providers/openflow/message:onos-providers-openflow-message-oar',
-    '//onos/providers/ovsdb:onos-providers-ovsdb-oar',
-    '//onos/providers/ovsdb/host:onos-providers-ovsdb-host-oar',
-    '//onos/providers/ovsdb/base:onos-providers-ovsdb-base-oar',
-    '//onos/providers/openflow/base:onos-providers-openflow-base-oar',
-    '//onos/providers/openflow/app:onos-providers-openflow-app-oar',
+    '//stable-onos/providers/openflow/message:onos-providers-openflow-message-oar',
+    '//stable-onos/providers/ovsdb:onos-providers-ovsdb-oar',
+    '//stable-onos/providers/ovsdb/host:onos-providers-ovsdb-host-oar',
+    '//stable-onos/providers/ovsdb/base:onos-providers-ovsdb-base-oar',
+    '//stable-onos/providers/openflow/base:onos-providers-openflow-base-oar',
+    '//stable-onos/providers/openflow/app:onos-providers-openflow-app-oar',
 ]
 
 SONA_APPS = [
