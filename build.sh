@@ -6,6 +6,9 @@ LOCAL_APPS=apps
 BUCK_OUT=buck-out
 SONA_OUT=sona-out
 BUCK=bin/buck
+BASH_PROFILE=tools/dev/bash_profile
+
+source $BASH_PROFILE
 
 rm -rf $LOCAL_APPS
 mkdir -p $LOCAL_APPS
