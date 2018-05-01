@@ -1,12 +1,12 @@
 #!/bin/bash
 
-MASTER_ONOS=02-master-onos
+MASTER_ONOS=$ONOS_ROOT/02-master-onos
 MASTER_ONOS_APPS=$MASTER_ONOS/apps
-LOCAL_APPS=apps
-BUCK_OUT=buck-out
-SONA_OUT=sona-out
-BUCK=bin/buck
-BASH_PROFILE=tools/dev/bash_profile
+LOCAL_APPS=$ONOS_ROOT/apps
+BUCK_OUT=$ONOS_ROOT/buck-out
+SONA_OUT=$ONOS_ROOT/sona-out
+BUCK=$ONOS_ROOT/bin/buck
+BASH_PROFILE=$ONOS_ROOT/tools/dev/bash_profile
 
 source $BASH_PROFILE
 

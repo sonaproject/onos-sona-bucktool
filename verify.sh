@@ -1,5 +1,5 @@
 #!/bin/bash
-BUCK=bin/buck
+BUCK=$ONOS_ROOT/bin/buck
 
 # run unit test for openstacknetworking
 $BUCK test //apps/openstacknetworking/app:onos-apps-openstacknetworking-app-tests
