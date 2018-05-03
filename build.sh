@@ -1,5 +1,6 @@
 #!/bin/bash
 
+STABLE_ONOS=01-stable-onos
 MASTER_ONOS=02-master-onos
 MASTER_ONOS_APPS=$MASTER_ONOS/apps
 LOCAL_APPS=apps
@@ -12,6 +13,9 @@ source $BASH_PROFILE
 
 rm -rf $LOCAL_APPS
 mkdir -p $LOCAL_APPS
+
+# copy onos.def from stable source
+cp $STABLE_ONOS/onos.defs ./
 
 # copy sona apps into the separated directory
 cp -R $MASTER_ONOS_APPS/openstacknetworking $LOCAL_APPS
@@ -28,5 +32,3 @@ cp $BUCK_OUT/gen/apps/openstacknetworking/onos-apps-openstacknetworking-oar/app.
 cp $BUCK_OUT/gen/apps/openstacknode/onos-apps-openstacknode-oar/app.oar $SONA_OUT/openstacknode.oar
 cp $BUCK_OUT/gen/apps/openstacknetworkingui/onos-apps-openstacknetworkingui-oar/app.oar $SONA_OUT/openstacknetworkingui.oar
 
-# clean
-# rm -rf $LOCAL_APPS
