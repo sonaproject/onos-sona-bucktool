@@ -66,6 +66,9 @@ SONA_APPS = [
     '//apps/openstacknetworking:onos-apps-openstacknetworking-oar',
     '//apps/openstacknetworkingui:onos-apps-openstacknetworkingui-oar',
     '//apps/openstacknode:onos-apps-openstacknode-oar',
+    '//apps/openstacktelemetry:onos-apps-openstacktelemetry-oar',
+    '//apps/openstackvtap:onos-apps-openstackvtap-oar',
+    '//apps/openstacktroubleshoot:onos-apps-openstacktroubleshoot-oar',
 ]
 
 APPS = SONA_APPS
