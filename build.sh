@@ -25,6 +25,9 @@ cp -R $MASTER_ONOS_APPS/openstacktelemetry $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstackvtap $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstacktroubleshoot $LOCAL_APPS
 
+# replace broken deps
+sed -i 's/com_google_code_gson_gson/gson/g' $LOCAL_APPS/openstacktelemetry/BUCK
+
 # start to build sona and corresponding artifacts
 $BUCK build onos
 
