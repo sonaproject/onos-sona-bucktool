@@ -21,6 +21,9 @@ cp $STABLE_ONOS/onos.defs ./
 cp -R $MASTER_ONOS_APPS/openstacknetworking $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstacknode $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstacknetworkingui $LOCAL_APPS
+cp -R $MASTER_ONOS_APPS/openstacktelemetry $LOCAL_APPS
+cp -R $MASTER_ONOS_APPS/openstackvtap $LOCAL_APPS
+cp -R $MASTER_ONOS_APPS/openstacktroubleshoot $LOCAL_APPS
 
 # start to build sona and corresponding artifacts
 $BUCK build onos
@@ -31,4 +34,6 @@ mkdir -p $SONA_OUT
 cp $BUCK_OUT/gen/apps/openstacknetworking/onos-apps-openstacknetworking-oar/app.oar $SONA_OUT/openstacknetworking.oar
 cp $BUCK_OUT/gen/apps/openstacknode/onos-apps-openstacknode-oar/app.oar $SONA_OUT/openstacknode.oar
 cp $BUCK_OUT/gen/apps/openstacknetworkingui/onos-apps-openstacknetworkingui-oar/app.oar $SONA_OUT/openstacknetworkingui.oar
-
+cp $BUCK_OUT/gen/apps/openstacktelemetry/onos-apps-openstacktelemetry-oar/app.oar $SONA_OUT/openstacktelemetry.oar
+cp $BUCK_OUT/gen/apps/openstackvtap/onos-apps-openstackvtap-oar/app.oar $SONA_OUT/openstackvtap.oar
+cp $BUCK_OUT/gen/apps/openstacktroubleshoot/onos-apps-openstacktroubleshoot-oar/app.oar $SONA_OUT/openstacktroubleshoot.oar
