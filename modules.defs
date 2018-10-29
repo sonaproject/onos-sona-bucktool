@@ -42,7 +42,7 @@ CORE = UTILS + API + [
     '//01-stable-onos/providers/ovsdb/tunnel:onos-providers-ovsdb-tunnel',
 
     '//01-stable-onos/web/api:onos-rest',
-    #'//01-stable-onos/web/gui:onos-gui',
+    '//01-stable-onos/web/gui:onos-gui',
 ]
 
 ONOS_DRIVERS = [
