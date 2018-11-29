@@ -3,6 +3,7 @@
 STABLE_ONOS=01-stable-onos
 MASTER_ONOS=02-master-onos
 MASTER_ONOS_APPS=$MASTER_ONOS/apps
+STABLE_ONOS_APPS=$STABLE_ONOS/apps
 LOCAL_APPS=apps
 BUCK_OUT=buck-out
 SONA_OUT=sona-out
