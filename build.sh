@@ -50,9 +50,6 @@ cp $STABLE_ONOS_APPS/openstacktroubleshoot/BUCK $LOCAL_APPS/openstacktroubleshoo
 cp $STABLE_ONOS_APPS/openstacktroubleshoot/api/BUCK $LOCAL_APPS/openstacktroubleshoot/api
 cp $STABLE_ONOS_APPS/openstacktroubleshoot/app/BUCK $LOCAL_APPS/openstacktroubleshoot/app
 
-# replace broken deps
-sed -i 's/com_google_code_gson_gson/gson/g' $LOCAL_APPS/openstacktelemetry/BUCK
-
 # start to build sona and corresponding artifacts
 $BUCK build onos
 
