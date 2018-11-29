@@ -2,7 +2,7 @@
 
 STABLE_ONOS=01-stable-onos
 MASTER_ONOS=02-master-onos
-BUCK_ONOS=03-buck-onos
+BUCK_ONOS=04-buck-onos
 MASTER_ONOS_APPS=$MASTER_ONOS/apps
 BUCK_ONOS_APPS=$BUCK_ONOS/apps
 LOCAL_APPS=apps
