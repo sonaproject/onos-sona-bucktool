@@ -33,6 +33,7 @@ cp $BUCK_ONOS_APPS/openstacknetworking/api/BUCK $LOCAL_APPS/openstacknetworking/
 cp $BUCK_ONOS_APPS/openstacknetworking/app/BUCK $LOCAL_APPS/openstacknetworking/app
 
 cp $BUCK_ONOS_APPS/openstacknode/BUCK $LOCAL_APPS/openstacknode
+cp $BUCK_ONOS_APPS/openstacknode/openstack4j.bucklet $LOCAL_APPS/openstacknode
 cp $BUCK_ONOS_APPS/openstacknode/api/BUCK $LOCAL_APPS/openstacknode/api
 cp $BUCK_ONOS_APPS/openstacknode/app/BUCK $LOCAL_APPS/openstacknode/app
 
