@@ -37,7 +37,6 @@ cp $BUCK_ONOS_APPS/openstacknode/api/BUCK $LOCAL_APPS/openstacknode/api
 cp $BUCK_ONOS_APPS/openstacknode/app/BUCK $LOCAL_APPS/openstacknode/app
 
 cp $BUCK_ONOS_APPS/openstacknetworkingui/BUCK $LOCAL_APPS/openstacknetworkingui
-cp $BUCK_ONOS_APPS/openstacknetworkingui/app/BUCK $LOCAL_APPS/openstacknetworkingui/app
 
 cp $BUCK_ONOS_APPS/openstacktelemetry/BUCK $LOCAL_APPS/openstacktelemetry
 cp $BUCK_ONOS_APPS/openstacktelemetry/api/BUCK $LOCAL_APPS/openstacktelemetry/api
