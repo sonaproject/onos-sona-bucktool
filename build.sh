@@ -2,9 +2,7 @@
 
 STABLE_ONOS=01-stable-onos
 MASTER_ONOS=02-master-onos
-BUCK_ONOS=04-buck-onos
 MASTER_ONOS_APPS=$MASTER_ONOS/apps
-BUCK_ONOS_APPS=$BUCK_ONOS/apps
 LOCAL_APPS=apps
 BUCK_OUT=buck-out
 SONA_OUT=sona-out
@@ -28,31 +26,9 @@ cp -R $MASTER_ONOS_APPS/openstackvtap $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstacktroubleshoot $LOCAL_APPS
 
 # copy BUCK build script
-cp $BUCK_ONOS_APPS/openstacknetworking/BUCK $LOCAL_APPS/openstacknetworking
-cp $BUCK_ONOS_APPS/openstacknetworking/api/BUCK $LOCAL_APPS/openstacknetworking/api
-cp $BUCK_ONOS_APPS/openstacknetworking/app/BUCK $LOCAL_APPS/openstacknetworking/app
-
-cp $BUCK_ONOS_APPS/openstacknode/BUCK $LOCAL_APPS/openstacknode
-cp $BUCK_ONOS_APPS/openstacknode/openstack4j.bucklet $LOCAL_APPS/openstacknode
-cp $BUCK_ONOS_APPS/openstacknode/api/BUCK $LOCAL_APPS/openstacknode/api
-cp $BUCK_ONOS_APPS/openstacknode/app/BUCK $LOCAL_APPS/openstacknode/app
-
-cp $BUCK_ONOS_APPS/openstacknetworkingui/BUCK $LOCAL_APPS/openstacknetworkingui
-
-cp $BUCK_ONOS_APPS/openstacktelemetry/BUCK $LOCAL_APPS/openstacktelemetry
-cp $BUCK_ONOS_APPS/openstacktelemetry/api/BUCK $LOCAL_APPS/openstacktelemetry/api
-cp $BUCK_ONOS_APPS/openstacktelemetry/app/BUCK $LOCAL_APPS/openstacktelemetry/app
-
-cp $BUCK_ONOS_APPS/openstackvtap/BUCK $LOCAL_APPS/openstackvtap
-cp $BUCK_ONOS_APPS/openstackvtap/api/BUCK $LOCAL_APPS/openstackvtap/api
-cp $BUCK_ONOS_APPS/openstackvtap/app/BUCK $LOCAL_APPS/openstackvtap/app
-
-cp $BUCK_ONOS_APPS/openstacktroubleshoot/BUCK $LOCAL_APPS/openstacktroubleshoot
-cp $BUCK_ONOS_APPS/openstacktroubleshoot/api/BUCK $LOCAL_APPS/openstacktroubleshoot/api
-cp $BUCK_ONOS_APPS/openstacktroubleshoot/app/BUCK $LOCAL_APPS/openstacktroubleshoot/app
-
-# replace broken deps
-sed -i 's/com_google_code_gson_gson/gson/g' $LOCAL_APPS/openstacktelemetry/BUCK
+cd legacy/onos/apps
+find . -name "BUCK" | cpio -pdm ../../../$LOCAL_APPS
+find . -name "*.bucklet" | cpio -pdm ../../../$LOCAL_APPS
 
 # start to build sona and corresponding artifacts
 $BUCK build onos
