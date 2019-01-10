@@ -26,9 +26,9 @@ cp -R $MASTER_ONOS_APPS/openstackvtap $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstacktroubleshoot $LOCAL_APPS
 
 # copy BUCK build script
-cd legacy/onos/apps
-find . -name "BUCK" | cpio -pdm ../../../$LOCAL_APPS
-find . -name "*.bucklet" | cpio -pdm ../../../$LOCAL_APPS
+cd legacy/apps
+find . -name "BUCK" | cpio -pdm ../../$LOCAL_APPS
+find . -name "*.bucklet" | cpio -pdm ../../$LOCAL_APPS
 
 # start to build sona and corresponding artifacts
 $BUCK build onos
