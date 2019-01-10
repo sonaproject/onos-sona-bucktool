@@ -31,6 +31,7 @@ find . -name "BUCK" | cpio -pdm ../../$LOCAL_APPS
 find . -name "*.bucklet" | cpio -pdm ../../$LOCAL_APPS
 
 # start to build sona and corresponding artifacts
+cd ../../
 $BUCK build onos
 
 # copy SONA artifacts into the sona-out directory
