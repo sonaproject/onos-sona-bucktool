@@ -29,6 +29,7 @@ TEST_DEPS = [
     '//core/common:onos-core-common-tests',
     '//web/api:onos-rest-tests',
     '//lib:TEST_REST',
+    '//lib:minimal-json',
 ]
 
 osgi_jar_with_tests (
