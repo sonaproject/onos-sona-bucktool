@@ -17,10 +17,6 @@ mkdir -p $LOCAL_APPS
 # copy onos.def from stable source
 cp $STABLE_ONOS/onos.defs ./
 
-# replace old BUCK lib with new one
-rm -rf $STABLE_ONOS/lib/BUCK
-cp BUCK $STABLE_ONOS/lib/BUCK
-
 # copy sona apps into the separated directory
 cp -R $MASTER_ONOS_APPS/openstacknetworking $LOCAL_APPS
 cp -R $MASTER_ONOS_APPS/openstacknode $LOCAL_APPS
